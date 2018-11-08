@@ -1,0 +1,11 @@
+<div id = "k">
+<div class = "text-center">
+<h1>recherche un Film</h1>
+
+<%= form_for(:home, url: {action: "result"}) do |f| %>
+    <%= f.label :film %><br>
+    <%= f.text_field :title %>
+    <p><%=f.submit "Envoyer" %></p>
+ <% end %>
+</div>
+</div>

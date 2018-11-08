@@ -1,0 +1,836 @@
+Started GET "/" for 127.0.0.1 at 2018-11-08 20:53:06 +0100
+  
+PG::ConnectionBad (FATAL:  la base de données « film_development » n'existe pas
+):
+  
+pg (1.1.3) lib/pg.rb:56:in `initialize'
+pg (1.1.3) lib/pg.rb:56:in `new'
+pg (1.1.3) lib/pg.rb:56:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  [1m[35m (397.9ms)[0m  [1m[35mCREATE DATABASE "film_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (273.2ms)[0m  [1m[35mCREATE DATABASE "film_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-11-08 20:53:21 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1203ms (Views: 1193.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 20:58:06 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 20:58:43 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 20:59:57 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:00:29 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:20:58 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:21:17 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:21:46 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:21:49 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FNE+vaNngkT8olkYdWqLOW5861JqtpSyEqelQ8tdwizlTD/Tb3QQyTPSyk066T3Hc3dh0vfi3NQN4BtXo7lOtQ==", "recherche"=>"", "commit"=>"recherche"}
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:25:33 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:25:35 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:26:04 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 174ms (Views: 168.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:26:11 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:28:47 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:29:55 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V0AQ/dSl7zvAVDiJFjcinkgt8X77qeD/oJbdJkAyhyOm3RGTGLZ9tg8kq9xZtJRgVSZ7/mb9qJm/0WMyKNYLug==", "recherche"=>"salim", "commit"=>"recherche"}
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:33:14 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z/I7uJxC/EKbU0RWqHGcXpG+5NuZovVm1AzCW3lhDPk+bzrWUFFuz1Qj1wPn8iqgjLVuWwT2vQDLS3xPEYWAYA==", "recherche"=>"tamere", "commit"=>"recherche"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `find_by' for SearchMovie:Class):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:33:32 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z/I7uJxC/EKbU0RWqHGcXpG+5NuZovVm1AzCW3lhDPk+bzrWUFFuz1Qj1wPn8iqgjLVuWwT2vQDLS3xPEYWAYA==", "recherche"=>"tamere", "commit"=>"recherche"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `perform' for SearchMovie:Class):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:33:43 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z/I7uJxC/EKbU0RWqHGcXpG+5NuZovVm1AzCW3lhDPk+bzrWUFFuz1Qj1wPn8iqgjLVuWwT2vQDLS3xPEYWAYA==", "recherche"=>"tamere", "commit"=>"recherche"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `perform' for SearchMovie:Class):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:34:23 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z/I7uJxC/EKbU0RWqHGcXpG+5NuZovVm1AzCW3lhDPk+bzrWUFFuz1Qj1wPn8iqgjLVuWwT2vQDLS3xPEYWAYA==", "recherche"=>"tamere", "commit"=>"recherche"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 441ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:34:23 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 412ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:36:13 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 1939ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:36:26 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4ZRJ/IIBtDjHTLCTXm/wKPDtLV0mB2fcETPL/z2o+bUQCUiSThImtQg8I8YR7EbW7ean3btTL7oOdHXrVUx1LA==", "recherche"=>"terminator", "commit"=>"recherche"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 631ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:36:27 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 838ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:37:03 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 289ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:25: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...ut_buffer.append=( if @movies );@output_buffer.safe_append='
+...                              ^
+/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:37: syntax error, unexpected keyword_else, expecting ')'
+  else 
+  ^~~~
+/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;  end 
+           ^~~
+/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/movies/search.html.erb:25: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/movies/search.html.erb:37: syntax error, unexpected keyword_else, expecting ')'
+app/views/movies/search.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+app/views/movies/search.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/movies/search.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:37:13 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 1181ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:25: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...er.append=( if @movies != nil );@output_buffer.safe_append='
+...                              ^
+/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:37: syntax error, unexpected keyword_else, expecting ')'
+  else 
+  ^~~~
+/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;  end 
+           ^~~
+/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/salim/THP/semaine06/day29/film/app/views/movies/search.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/movies/search.html.erb:25: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/movies/search.html.erb:37: syntax error, unexpected keyword_else, expecting ')'
+app/views/movies/search.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+app/views/movies/search.html.erb:43: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/movies/search.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:40:58 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 610ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `exist?' for nil:NilClass):
+    22:  <p>Voici la liste de films :</p>
+    23: 
+    24: 
+    25:  <% if @movies.exist? %>
+    26:    <% @movies.each do |movie| %>
+    27:    <p> <%= movie["title"] %> , sorti le: <%= movie["release_date"] %></p>
+    28: 
+  
+app/views/movies/search.html.erb:25:in `_app_views_movies_search_html_erb__1221115359235828191_70152361118940'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:41:41 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 428ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:41:48 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0aDJjhPU9lObhXgeh4zVDHWCPw2Vzqh75/ZU1zu7xkIgPcjg38dk3lT160vID2PyaIm1jQia4B34serDU19K2w==", "recherche"=>"terminator", "commit"=>"recherche"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 379ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:41:49 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 386ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:43:51 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 310ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:45:09 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jx5bD0DdpDyfHpjeEcmms+mILR6RZ8TJ71oF2+kSHabWg1phjM42sVBuC4teShBN9IOnngwzjK/wHbvPgfaRPw==", "recherche"=>"qfqs", "commit"=>"recherche"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 348ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:45:10 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 365ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:45:53 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 264ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `exist?' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:4:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:46:15 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 393ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:47:10 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Blkd1bRRcmjyETdjmieHj7Xo6JcQ2NES1fOHJJQwxnz3xBy7eELg5T1hpDbVpDFxqONiF42MmXTKtDkw/NRK5Q==", "recherche"=>"loup", "commit"=>"recherche"}
+Completed 500 Internal Server Error in 279ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/movies_controller.rb:5:in `[]'
+app/controllers/movies_controller.rb:5:in `search'
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:47:27 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Blkd1bRRcmjyETdjmieHj7Xo6JcQ2NES1fOHJJQwxnz3xBy7eELg5T1hpDbVpDFxqONiF42MmXTKtDkw/NRK5Q==", "recherche"=>"loup", "commit"=>"recherche"}
+Completed 500 Internal Server Error in 420ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/movies_controller.rb:5:in `search'
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:51:54 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Blkd1bRRcmjyETdjmieHj7Xo6JcQ2NES1fOHJJQwxnz3xBy7eELg5T1hpDbVpDFxqONiF42MmXTKtDkw/NRK5Q==", "recherche"=>"loup", "commit"=>"recherche"}
+Completed 500 Internal Server Error in 492ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/movies_controller.rb:5:in `search'
+Started POST "/" for 127.0.0.1 at 2018-11-08 21:53:01 +0100
+Processing by MoviesController#search as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Blkd1bRRcmjyETdjmieHj7Xo6JcQ2NES1fOHJJQwxnz3xBy7eELg5T1hpDbVpDFxqONiF42MmXTKtDkw/NRK5Q==", "recherche"=>"loup", "commit"=>"recherche"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:53:09 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:55:04 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:55:08 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:55:41 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:url=>{:action=>"result"}}:Hash):
+    2: <div class = "text-center">
+    3: <h1>recherche un Film</h1>
+    4: 
+    5: <%= form_for(url: {action: "result"}) do |f| %>
+    6:     <%= f.label :film %><br>
+    7:     <%= f.text_field :title %>
+    8:     <p><%=f.submit "Envoyer" %></p>
+  
+app/views/movies/search.html.erb:5:in `_app_views_movies_search_html_erb__1221115359235828191_70152318450040'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:56:15 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:56:34 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:57:31 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 163ms (Views: 162.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:58:07 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:58:58 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:59:18 +0100
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-11-08 21:59:48 +0100
+Processing by MoviesController#search as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/movies_controller.rb:3:in `search'
+Started GET "/" for 127.0.0.1 at 2018-11-08 22:00:09 +0100
+Processing by MoviesController#search as HTML
+  Rendering movies/search.html.erb within layouts/application
+  Rendered movies/search.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/result" for 127.0.0.1 at 2018-11-08 22:00:16 +0100
+Processing by MoviesController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VuP8iAED4PpxeJG/rrmjolONR/THeH7SuwovzIuG7kUxo6c7BedDia1cROxOVBwlEW/n05JqZ1Vq5arWsqXIA==", "home"=>{"title"=>"terminator"}, "commit"=>"Envoyer"}
+  Rendering movies/result.html.erb within layouts/application
+  Rendered movies/result.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 561ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/result" for 127.0.0.1 at 2018-11-08 22:02:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/movies/result"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movies/result" for 127.0.0.1 at 2018-11-08 22:02:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/movies/result"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movies/result" for 127.0.0.1 at 2018-11-08 22:02:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/movies/result"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movies/result" for 127.0.0.1 at 2018-11-08 22:02:23 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/movies/result"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movies/result" for 127.0.0.1 at 2018-11-08 22:03:45 +0100
+Processing by MoviesController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VuP8iAED4PpxeJG/rrmjolONR/THeH7SuwovzIuG7kUxo6c7BedDia1cROxOVBwlEW/n05JqZ1Vq5arWsqXIA==", "home"=>{"title"=>"terminator"}, "commit"=>"Envoyer"}
+  Rendering movies/result.html.erb within layouts/application
+  Rendered movies/result.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 708ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/result" for 127.0.0.1 at 2018-11-08 22:05:17 +0100
+Processing by MoviesController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VuP8iAED4PpxeJG/rrmjolONR/THeH7SuwovzIuG7kUxo6c7BedDia1cROxOVBwlEW/n05JqZ1Vq5arWsqXIA==", "home"=>{"title"=>"terminator"}, "commit"=>"Envoyer"}
+  Rendering movies/result.html.erb within layouts/application
+  Rendered movies/result.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 1111ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/result" for 127.0.0.1 at 2018-11-08 22:05:53 +0100
+Processing by MoviesController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VuP8iAED4PpxeJG/rrmjolONR/THeH7SuwovzIuG7kUxo6c7BedDia1cROxOVBwlEW/n05JqZ1Vq5arWsqXIA==", "home"=>{"title"=>"terminator"}, "commit"=>"Envoyer"}
+  Rendering movies/result.html.erb within layouts/application
+  Rendered movies/result.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 367ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/result" for 127.0.0.1 at 2018-11-08 22:06:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/movies/result"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movies/result" for 127.0.0.1 at 2018-11-08 22:06:19 +0100
+Processing by MoviesController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VuP8iAED4PpxeJG/rrmjolONR/THeH7SuwovzIuG7kUxo6c7BedDia1cROxOVBwlEW/n05JqZ1Vq5arWsqXIA==", "home"=>{"title"=>"terminator"}, "commit"=>"Envoyer"}
+  Rendering movies/result.html.erb within layouts/application
+  Rendered movies/result.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 564ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/result" for 127.0.0.1 at 2018-11-08 22:09:25 +0100
+Processing by MoviesController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VuP8iAED4PpxeJG/rrmjolONR/THeH7SuwovzIuG7kUxo6c7BedDia1cROxOVBwlEW/n05JqZ1Vq5arWsqXIA==", "home"=>{"title"=>"terminator"}, "commit"=>"Envoyer"}
+  Rendering movies/result.html.erb within layouts/application
+  Rendered movies/result.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 339ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/result" for 127.0.0.1 at 2018-11-08 22:09:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/movies/result"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movies/result" for 127.0.0.1 at 2018-11-08 22:09:59 +0100
+Processing by MoviesController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VuP8iAED4PpxeJG/rrmjolONR/THeH7SuwovzIuG7kUxo6c7BedDia1cROxOVBwlEW/n05JqZ1Vq5arWsqXIA==", "home"=>{"title"=>"terminator"}, "commit"=>"Envoyer"}
+  Rendering movies/result.html.erb within layouts/application
+  Rendered movies/result.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 348ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies/result" for 127.0.0.1 at 2018-11-08 22:10:30 +0100
+Processing by MoviesController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VuP8iAED4PpxeJG/rrmjolONR/THeH7SuwovzIuG7kUxo6c7BedDia1cROxOVBwlEW/n05JqZ1Vq5arWsqXIA==", "home"=>{"title"=>"terminator"}, "commit"=>"Envoyer"}
+  Rendering movies/result.html.erb within layouts/application
+  Rendered movies/result.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 371ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/result" for 127.0.0.1 at 2018-11-08 22:12:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/movies/result"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started POST "/movies/result" for 127.0.0.1 at 2018-11-08 22:12:24 +0100
+Processing by MoviesController#result as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5VuP8iAED4PpxeJG/rrmjolONR/THeH7SuwovzIuG7kUxo6c7BedDia1cROxOVBwlEW/n05JqZ1Vq5arWsqXIA==", "home"=>{"title"=>"terminator"}, "commit"=>"Envoyer"}
+  Rendering movies/result.html.erb within layouts/application
+  Rendered movies/result.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 396ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+

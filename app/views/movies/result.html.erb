@@ -1,0 +1,24 @@
+<div class = "text-center">
+ <p>Voici la liste de films :</p>
+
+
+ <% if @movies != nil %>
+   <% i = 0 %>
+   <% @movies.each do |movie| %>
+   <p> <%= movie["title"] %> , sorti le: <%= movie["release_date"] %></p>
+
+<!-- Affichage image -->
+     <% if movie["poster_path"] != nil %>
+       <% url = "https://image.tmdb.org/t/p/w200" + movie["poster_path"] %>
+       <%= puts url %>
+       <img src= <%= url %> />
+     <% end %>
+
+ <% end %>
+ <% else %>
+ <p>Aucun résultat</p>
+ <% end %>
+
+ </div>
+
+ 
